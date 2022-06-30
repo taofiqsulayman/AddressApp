@@ -15,6 +15,16 @@ public class LekkiProperty {
     private long validFrom; // getting time and date in milliseconds since the UNIX Epoch
     private long validTo;
 
+    public LekkiProperty(int propertyId, String propertyAddress, String propertyType) {
+        this.propertyId = propertyId;
+        this.propertyAddress = propertyAddress;
+        this.propertyType = propertyType;
+    }
+
+    public LekkiProperty() {
+
+    }
+
 
     public int getPropertyId() {
         return propertyId;

@@ -1,17 +1,24 @@
 package com.dufuna.berlin.TaofiqSulayman.lekki.service;
 
 import com.dufuna.berlin.TaofiqSulayman.lekki.model.LekkiProperty;
+import com.dufuna.berlin.TaofiqSulayman.lekki.repository.SimpleLekkiPropertyRepository;
+import com.dufuna.berlin.TaofiqSulayman.lekki.repository.SimpleLekkiPropertyRepositoryImpl;
+
+import java.util.List;
 
 public class MockLekkiPropertyService implements LekkiPropertyService {
-    @Override
-    public void saveProperty(LekkiProperty property) {
-        System.out.println("MockLekkiPropertyService" + "." + "saveProperty");
+    SimpleLekkiPropertyRepository propertyRepository = new SimpleLekkiPropertyRepositoryImpl();
+    public void saveProperty(LekkiProperty LekkiProperty) {
+        propertyRepository.save(LekkiProperty);
+    }
+
+    public LekkiProperty getProperty(int propertyId) {
+        return propertyRepository.findById(propertyId);
     }
 
     @Override
-    public LekkiProperty getProperty() {
-        System.out.println("MockLekkiPropertyService" + "." + "getProperty");
-        return new LekkiProperty();
+    public List<LekkiProperty> getProperties() {
+        return propertyRepository.findAll();
     }
 }
 
