@@ -1,8 +1,8 @@
 package com.dufuna.berlin.TaofiqSulayman.lekki.service;
 
-import com.dufuna.berlin.TaofiqSulayman.lekki.model.LekkiProperty;
 import com.dufuna.berlin.TaofiqSulayman.lekki.repository.SimpleLekkiPropertyRepository;
 import com.dufuna.berlin.TaofiqSulayman.lekki.repository.SimpleLekkiPropertyRepositoryImpl;
+import com.dufuna.berlin.TaofiqSulayman.lekki.model.LekkiProperty;
 
 import java.util.List;
 

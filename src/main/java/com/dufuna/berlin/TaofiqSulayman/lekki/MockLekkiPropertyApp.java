@@ -1,9 +1,9 @@
 package com.dufuna.berlin.TaofiqSulayman.lekki;
 
 
-import com.dufuna.berlin.TaofiqSulayman.lekki.model.LekkiProperty;
 import com.dufuna.berlin.TaofiqSulayman.lekki.service.LekkiPropertyService;
 import com.dufuna.berlin.TaofiqSulayman.lekki.service.MockLekkiPropertyService;
+import com.dufuna.berlin.TaofiqSulayman.lekki.model.LekkiProperty;
 
 class MockLekkiPropertyApp {
     String[] propertyAddress = { "Phase 1","Osapa","Phase 2", "Chevron"};
