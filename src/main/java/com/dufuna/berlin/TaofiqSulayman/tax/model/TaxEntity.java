@@ -3,6 +3,10 @@ package com.dufuna.berlin.TaofiqSulayman.tax.model;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+
+/**
+ * Data Used for the calculations related to each tax bracket
+ **/
 @Data
 @NoArgsConstructor
 public class TaxEntity {
