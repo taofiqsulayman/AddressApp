@@ -13,6 +13,9 @@ import lombok.NoArgsConstructor;
 
 
 public class TaxRequest {
+
+
     private int income;
+
     private double tax;
 }
