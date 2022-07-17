@@ -1,0 +1,10 @@
+server:
+  port: 8085
+keycloak:
+  auth-server-url: http://localhost:8081/
+  realm: tax-calculator-app
+  resource: springboot-keycloak
+  public-client: true
+  bearer-only: true
+  principal-attribute: preferred_username
+  security-constraints[0].authRoles[0]: user
