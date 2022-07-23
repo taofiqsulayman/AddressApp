@@ -15,7 +15,7 @@ import javax.annotation.security.RolesAllowed;
 @RequestMapping("/tax")
 
 public class TaxController {
-//    TaxService service = new TaxServiceImp();
+    //    TaxService service = new TaxServiceImp();
     @Autowired
 
     private TaxService service;
@@ -24,20 +24,13 @@ public class TaxController {
     @ResponseStatus(HttpStatus.CREATED)
     @RolesAllowed({"user","admin"})
 
+
     public TaxRequest taxCalculator(@RequestBody TaxRequest taxRequest){
 
-@RestController
-@RequestMapping("/tax")
-public class TaxController {
-    @PostMapping
-    @ResponseStatus(HttpStatus.CREATED)
-    public TaxRequest calculateTax(@RequestBody TaxRequest taxRequest){
-        TaxService service = new TaxServiceImp();
 
-        return TaxRequest.builder()
-                .income(taxRequest.getIncome())
-                .tax(service.taxCalculator(taxRequest.getIncome()))
-                .build();
-    }
-}
-
+                return TaxRequest.builder()
+                        .income(taxRequest.getIncome())
+                        .tax(service.taxCalculator(taxRequest.getIncome()))
+                        .build();
+            }
+        }
